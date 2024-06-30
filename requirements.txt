@@ -2,4 +2,4 @@ streamlit==1.23.1
 pymongo==4.3.2
 bcrypt==4.0.1
 openai==1.1.0
-git+https://github.com/pawarspeaks/Hospital_Management_User/streamlit_cookies_manager.git
+git+https://github.com/pawarspeaks/Hospital_Management_User.git#egg=streamlit_cookies_manager
