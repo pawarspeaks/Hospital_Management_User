@@ -18,7 +18,7 @@ cookies = EncryptedCookieManager(
 )
 
 # OpenAI API Key
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
 # MongoDB Connection
 client_mongo = MongoClient('mongodb+srv://atharva2021:123@cluster0.so5reec.mongodb.net/')
