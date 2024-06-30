@@ -9,6 +9,10 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from threading import Timer
+import os  # Import os module for environment variables
+
+# Fetch OpenAI API Key from environment variables
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # Initialize cookies manager with a password
 password = "your_secret_password"  # Replace with a secure password
@@ -17,8 +21,8 @@ cookies = EncryptedCookieManager(
     prefix="app"
 )
 
-# OpenAI API Key
-client = OpenAI(api_key="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")
+# Initialize OpenAI client with the API key
+client = OpenAI(api_key=openai_api_key)
 
 # MongoDB Connection
 client_mongo = MongoClient('mongodb+srv://atharva2021:123@cluster0.so5reec.mongodb.net/')
